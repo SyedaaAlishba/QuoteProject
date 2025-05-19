@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Preconnect to Google Fonts to speed up font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Import a custom Google Font (Space Grotesk) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Main container for the quote box -->
+    <div class="quotebox">
+      <h2>Quote of the day</h2>
+      <blockquote id="quote">Loading..</blockquote>
+      <span id="author">Loading..</span>
+
+      <!-- Container for the button -->
+      <div>
+        <button onclick="getquote(api_url)">New Quote</button>
+      </div>
+    </div>
+  </body>
+
+  <!-- Link to external JavaScript file placed at end of body for better performance -->
+  <script src="script.js"></script>
+</html>
